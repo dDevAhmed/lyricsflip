@@ -32,6 +32,7 @@ import { SongGenreModule } from './song-genre/song-genre.module';
 import { SocialModule } from './social/social.module';
 // import { AchievementModule } from './achievement/achievement.module';
 import { CacheModule } from '@nestjs/cache-manager';
+import { RatingsModule } from './ratings/ratings.module';
 import * as redisStore from 'cache-manager-redis-store';
 
 @Module({
@@ -71,6 +72,8 @@ import * as redisStore from 'cache-manager-redis-store';
     GameModeModule,
 
     SongGenreModule,
+
+    RatingsModule,
 
   ],
   controllers: [AppController],
